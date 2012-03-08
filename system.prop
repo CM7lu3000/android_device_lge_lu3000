@@ -11,6 +11,7 @@ ro.telephony.service_provider=LGT
 lgt.3g.data.mode=2
 rild.libpath=/system/lib/lge-ril.so
 rild.libargs=-d /dev/ttyspi0
+mobiledata.interfaces=vsnet0,vsnet1,vsnet2,vsnet3
 
 #WIFI SETTING
 wifi.interface=tiwlan0
