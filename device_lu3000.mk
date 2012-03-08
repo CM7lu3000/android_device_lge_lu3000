@@ -71,7 +71,15 @@ PRODUCT_COPY_FILES += \
 
 ## GPS
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
+    $(LOCAL_PATH)/configs/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml \
+    $(LOCAL_PATH)/configs/72fa7371.0:system/etc/cert/72fa7371.0 \
+    $(LOCAL_PATH)/configs/537a0176.0:system/etc/cert/537a0176.0 \
+    $(LOCAL_PATH)/configs/583a21ed.0:system/etc/cert/583a21ed.0 \
+    $(LOCAL_PATH)/configs/7651b327.0:system/etc/cert/7651b327.0 \
+    $(LOCAL_PATH)/configs/c9dbfc2e.0:system/etc/cert/c9dbfc2e.0 \
+    $(LOCAL_PATH)/configs/c33a80d4.0:system/etc/cert/c33a80d4.0 \
+    $(LOCAL_PATH)/configs/ddc328ff.0:system/etc/cert/ddc328ff.0 \
+    $(LOCAL_PATH)/configs/lge.cer:system/etc/cert/lge.cer
 
 # Permission files
 PRODUCT_COPY_FILES += \

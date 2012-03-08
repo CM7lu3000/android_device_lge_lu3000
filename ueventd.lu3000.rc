@@ -12,13 +12,7 @@
 /dev/block/mmcblk0p3 0640 root		system
 /dev/block/mmcblk0p4 0640 root		system
 
-#--[[ LGE_UBIQUIX_MODIFIED_START : scchoi@ubiquix.com [2011-07-14] - Changed permission and owner for factory reset test.
-/dev/mtd/mtd5             0660   system     radio
-#--]] LGE_UBIQUIX_MODIFIED_END : scchoi@ubiquix.com [2011-07-14] - Changed permission and owner for factory reset test.
-
-# S, 20110921, mschung@ubiquix.com, Change permission and owner to support USB AP/CP retain mode.
 /dev/mtd/mtd11            0660   system     radio
-# E, 20110921, mschung@ubiquix.com, Change permission and owner to support USB AP/CP retain mode.
 
 # logger should be world writable (for logging) but not readable
 /dev/log/*                0662   root       log
@@ -54,8 +48,9 @@
 /dev/msm_camera/*         0660   system     system
 /dev/akm8976_daemon       0640   compass    system
 /dev/akm8976_aot          0640   compass    system
-/dev/akm8973_daemon       0640   compass    system
-/dev/akm8973_aot          0640   compass    system
+/dev/akm8973_daemon       0666   system     system
+/dev/akm8973_aot          0666   system     system
+/dev/kxtf9_accel          0666   system     system
 /dev/bma150               0640   compass    system
 /dev/cm3602               0640   compass    system
 /dev/akm8976_pffd         0640   compass    system
@@ -82,6 +77,7 @@
 /dev/qmi1                 0640   radio      radio
 /dev/qmi2                 0640   radio      radio
 /dev/bus/usb/*            0660   root       usb
+/dev/tspdrv               0660   shell      system
 
 # CDMA radio interface MUX
 /dev/ts0710mux*           0640   radio      radio
@@ -97,3 +93,59 @@
 /dev/broadcast0           0666  broadcast    root
 /dev/ttyspi2              0666  broadcast    root
 #//--]] LGE_UBIQUIX_MODIFIED_END : ymjun@mnbt.co.kr - TDMB
+
+/dev/ttyspi0              0660  radio        radio
+/dev/ttyspi1              0660  radio        radio
+
+/dev/pts1                 0660  radio        radio
+/dev/pts2                 0660  radio        radio
+/dev/pts3                 0660  radio        radio
+/dev/pts4                 0660  radio        radio
+/dev/pts5                 0660  radio        radio
+/dev/pts6                 0660  radio        radio
+/dev/pts7                 0660  radio        radio
+/dev/pts8                 0660  radio        radio
+/dev/pts9                 0660  radio        radio
+/dev/pts10                0660  radio        radio
+/dev/pts11                0660  radio        radio
+/dev/pts12                0660  radio        radio
+/dev/pts13                0660  radio        radio
+/dev/pts14                0660  radio        radio
+/dev/pts15                0660  radio        radio
+/dev/pts16                0660  radio        radio
+/dev/pts17                0660  radio        radio
+/dev/pts18                0660  radio        radio
+/dev/pts19                0660  radio        radio
+/dev/pts20                0660  radio        radio
+/dev/pts21                0660  radio        radio
+/dev/pts22                0660  radio        radio
+/dev/pts23                0660  radio        radio
+/dev/pts24                0660  radio        radio
+/dev/pts25                0660  radio        radio
+/dev/pts26                0660  radio        radio
+/dev/pts27                0660  radio        radio
+/dev/pts28                0660  radio        radio
+/dev/pts29                0660  radio        radio
+/dev/pts30                0660  radio        radio
+/dev/pts31                0660  radio        radio
+
+/dev/ttyGS0               0777  root         root
+/dev/ttyGS1               0777  root         root
+/dev/ttyGS2               0777  root         root
+
+/dev/DspBridge            0777  root         root
+
+/dev/video1               0777  root         root
+/dev/video2               0777  root         root
+/dev/video5               0777  root         root
+/dev/video6               0777  root         root
+/dev/video10              0777  root         root
+
+/dev/omap-previewer       0777  root         root
+/dev/omap-prev2resz       0777  root         root
+/dev/omap-resizer         0777  root         root
+
+/dev/hdmitx               0666  root         root
+
+/dev/ttyO1                0660  root         bluetooth
+
