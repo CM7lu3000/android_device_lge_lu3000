@@ -14,6 +14,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.omap.post_boot.sh:root/init.omap.post_boot.sh \
     $(LOCAL_PATH)/configs/vold.fstab:system/etc/vold.fstab
 
+# RIL stuffs
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.vsnet:system/etc/init.vsnet \
+    $(LOCAL_PATH)/init_lgt.vsnet:system/etc/init_lgt.vsnet
+
 ## Charger Mode files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_01.rle:root/chargerimages/battery_charging_01.rle \
