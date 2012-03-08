@@ -14,6 +14,32 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.omap.post_boot.sh:root/init.omap.post_boot.sh \
     $(LOCAL_PATH)/configs/vold.fstab:system/etc/vold.fstab
 
+## Charger Mode files
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_01.rle:root/chargerimages/battery_charging_01.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_02.rle:root/chargerimages/battery_charging_02.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_03.rle:root/chargerimages/battery_charging_03.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_04.rle:root/chargerimages/battery_charging_04.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_05.rle:root/chargerimages/battery_charging_05.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_06.rle:root/chargerimages/battery_charging_06.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/battery_very_low.rle:root/chargerimages/battery_very_low.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/battery_wait_01.rle:root/chargerimages/battery_wait_01.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/battery_wait_02.rle:root/chargerimages/battery_wait_02.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/black_bg.rle:root/chargerimages/black_bg.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/charger_background.rle:root/chargerimages/charger_background.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/dummy_battery.rle:root/chargerimages/dummy_battery.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/lockscreen_charge_ani_no_battery.rle:root/chargerimages/lockscreen_charge_ani_no_battery.rle \
+    $(LOCAL_PATH)/chargemode/chargerimages/white_lg_logo.rle:root/chargerimages/white_lg_logo.rle \
+    $(LOCAL_PATH)/chargemode/chargerlogo:root/sbin/chargerlogo
+
+## KeyLayout Files
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+    $(LOCAL_PATH)/configs/Broadcom_Bluetooth_HID.kl:system/usr/keylayout/Broadcom_Bluetooth_HID.kl \
+    $(LOCAL_PATH)/configs/TWL4030_Keypad.kl:system/usr/keylayout/TWL4030_Keypad.kl \
+    $(LOCAL_PATH)/configs/hub_synaptics_touch.kl:system/usr/keylayout/hub_synaptics_touch.kl \
+    $(LOCAL_PATH)/configs/twl4030_pwrbutton.kl:system/usr/keylayout/twl4030_pwrbutton.kl
+
 ## Wifi Files(Config, Firmware, Module, ...etc)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/firmware.bin:system/etc/wifi/firmware.bin \
