@@ -7,14 +7,14 @@ $(call inherit-product-if-exists, vendor/lge/lu3000/lu3000-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/lge/lu3000/overlay
 
-##Init files
+## Init files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.lu3000.rc:root/init.rc \
     $(LOCAL_PATH)/ueventd.lu3000.rc:root/ueventd.rc \
     $(LOCAL_PATH)/init.omap.post_boot.sh:root/init.omap.post_boot.sh \
     $(LOCAL_PATH)/configs/vold.fstab:system/etc/vold.fstab
 
-##Wifi Files(Config, Firmware, Module, ...etc)
+## Wifi Files(Config, Firmware, Module, ...etc)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/firmware.bin:system/etc/wifi/firmware.bin \
     $(LOCAL_PATH)/prebuilt/tiwlan_drv.ko:system/etc/wifi/tiwlan_drv.ko \
@@ -36,6 +36,16 @@ PRODUCT_COPY_FILES += \
 ## GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps_brcm_conf.xml:system/etc/gps_brcm_conf.xml
+
+## Product Packages
+PRODUCT_PACKAGES += \
+    libskiahw \
+    overlay.lu3000 \
+    alsa.lu3000 \
+    acoustics.default \
+    libaudiomodemgeneric \
+    prb \
+    wifimac
 
 $(call inherit-product, build/target/product/full.mk)
 
