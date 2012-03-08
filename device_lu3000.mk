@@ -19,6 +19,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.vsnet:system/etc/init.vsnet \
     $(LOCAL_PATH)/init_lgt.vsnet:system/etc/init_lgt.vsnet
 
+
+## Bootlogo
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/bootimages/Booting_ani_480x800_00.rle:root/bootimages/Booting_ani_480x800_00.rle
+
 ## Charger Mode files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/chargemode/chargerimages/battery_charging_01.rle:root/chargerimages/battery_charging_01.rle \
